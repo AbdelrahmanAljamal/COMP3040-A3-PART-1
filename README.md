@@ -1,3 +1,3 @@
 # Public Washrooms in Manitoba
 
-  This API Provide the information about the public washrooms in Manitoba based on the 
+  This API Provide the information about the public washrooms in Manitoba based on the given postal code.
