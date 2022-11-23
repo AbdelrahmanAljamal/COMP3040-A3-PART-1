@@ -1,3 +1,3 @@
 # Public Washrooms in Manitoba
 
-  This API 
+  This API Provide the information about the public washrooms 
