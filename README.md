@@ -7,6 +7,8 @@
   Ours is a very simple api, you only have to do a GET request to https://api.public-washrooms-Manitoba.org/json.
  
 ## Parameters
-
+1. Location
+2. Maximum search radius
+3. Handicap accessible
   
   
