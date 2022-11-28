@@ -16,10 +16,20 @@
 | :-------: | :--:   | :------: | :---------: |
 | location  | String | Yes      | location given by user |
 | radius    | int    | Yes      | search radius in meter |
-| maxNumber | int    | Yes      | maximum number of washrooms can be shown |
+| maxNumber | int    | No       | maximum number of washrooms can be shown |
 
 1. Location
 2. Maximum search radius
 3. Handicap accessible
+
+## Sample Request
+These are several sample requests to get information about public washrooms for a given location (by postal code or GPS) and search radius.  
+<kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=500&maxNumber=10</kbd>
+or  
+<kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=200</kbd>
+or
+<kbd>https://api.washroomhelper.org/washrooms?location="49°48'20.39" N -97°07'34.80" W"&radius=200</kbd>
+
+
   
   
