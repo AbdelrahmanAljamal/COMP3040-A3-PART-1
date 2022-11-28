@@ -5,18 +5,19 @@
   
   The public waskroom information given in the response will be a list includes: the location of the public washrooms, the distance of the washrooms, accessible condition of the washrooms, and opening hours of the washrooms. More information about the response can be found in the sample response section.  
   
-## Endpionts
+## Endpoints
   Our API is a very simple API, you only need to do a GET request to https://api.public-washrooms-Manitoba.org/json.  
   Our API is a very simple API. The only one endpoint can be hit by using a GET request.  
     
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
  
 ## Parameters
-| Parameter | Type   | Required | Description |
-| :-------: | :--:   | :------: | :---------: |
-| location  | String | Yes      | location given by user |
-| radius    | int    | Yes      | search radius in meter |
-| maxNumber | int    | No       | maximum number of washrooms will be shown |
+| Parameter  | Type    | Required | Description |
+| :-------:  | :--:    | :------: | :---------: |
+| location   | String  | Yes      | location given by user |
+| radius     | int     | Yes      | search radius in meter |
+| maxNumber  | int     | No       | maximum number of washrooms will be shown |
+| accessible | boolean | No       | hadicap accessible condtion |
 
 1. Location
 2. Maximum search radius
