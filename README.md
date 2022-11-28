@@ -27,6 +27,10 @@ These are several sample requests to get information about public washrooms for 
 <kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=500&maxNumber=10</kbd>  
 or  
 <kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=200</kbd>
+  
+Additionally, a request without parameters also can be made. This request will get a list with all public washrooms recorded among the database in Manitoba.  
+<kbd>https://api.washroomhelper.org/washrooms</kbd>  
+
 
 
 
