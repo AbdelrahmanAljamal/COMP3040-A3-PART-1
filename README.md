@@ -8,6 +8,7 @@
 ## Endpionts
   Our API is a very simple API, you only need to do a GET request to https://api.public-washrooms-Manitoba.org/json.  
   Our API is a very simple API. The only one endpoint can be hit by using a GET request.  
+    
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
  
 ## Parameters
