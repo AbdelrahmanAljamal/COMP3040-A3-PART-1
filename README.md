@@ -24,11 +24,10 @@
 
 ## Sample Request
 These are several sample requests to get information about public washrooms for a given location (by postal code or GPS) and search radius.  
-<kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=500&maxNumber=10</kbd>
+<kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=500&maxNumber=10</kbd>  
 or  
 <kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=200</kbd>
-or
-<kbd>https://api.washroomhelper.org/washrooms?location="49°48'20.39" N -97°07'34.80" W"&radius=200</kbd>
+
 
 
   
