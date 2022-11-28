@@ -20,6 +20,7 @@
 
 ## Sample Request
 These are several sample requests to get information about public washrooms for a given location (by postal code) and search radius.  
+
 <kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=500&maxNumber=10</kbd>  
 or  
 <kbd>https://api.washroomhelper.org/washrooms?location="r3t2n2"&radius=200</kbd>
