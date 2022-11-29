@@ -10,7 +10,7 @@
     
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
  
-## Parameters
+### Parameters
 | Parameter  | Type    | Required | Description |
 | :-------:  | :--:    | :------: | :---------: |
 | location   | String  | Yes      | location given by user |
@@ -68,7 +68,7 @@ Additionally, a request without parameters also can be made. This request will g
 }
 ```
 
-## Response Object Definitions
+## Response Object Definitions/Descriptions
 | Parameter   | Type    | Description |
 | :------:    | :--:    | :---------: |
 | name        | String  | name of the washroom (if no name, base on the building it located) |
@@ -86,5 +86,5 @@ Additionally, a request without parameters also can be made. This request will g
 
 
 
-  
-  
+
+
