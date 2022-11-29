@@ -1,9 +1,9 @@
 # Public Washrooms in Manitoba
 
 ## API Description 
-  This API provides information about public washrooms in Manitoba near the user's location. The user can get a list of information about public washrooms by giving search radius (in meter) and user's location (by GPS or input postal code). A search for public washrooms will revolve around the user's location provided. The user's location can be the postal code inputed by user or the GPS information shared by user. The user also can set the number of washrooms shown in the result list.  
+  This API provides information about public washrooms in Manitoba near the user's location. The user can receive a list of information about nearby public washrooms by providing a location and specifying a maximum search radius. The user is also able to specify handicap accessible washrooms. The information submitted to the location parameter may either be the GPS coordinates of the user's device, or a postal code entered by the user. The user also can set the maximum number of washroom results returned.  
   
-  The public waskroom information given in the response will be a list includes: the location of the public washrooms, the distance of the washrooms, accessible condition of the washrooms, and opening hours of the washrooms. More information about the response can be found in the sample response section.  
+  The response will contain a list of information including: the location, distance, accessible conditions, and available hours of the washrooms. More information about the response can be found in the sample response section.  
   
 ## Endpoint(s)
   Our API is a very simple API. The only one endpoint can be hit by using a <kbd>GET</kbd> request.  
@@ -15,7 +15,7 @@
 | :-------:  | :--:    | :------: | :---------: |
 | location   | String  | Yes      | location given by user |
 | radius     | int     | Yes      | search radius in meter |
-| accessible | boolean | No       | hadicap accessible condtion of washroom |
+| accessible | boolean | No       | handicap accessible condition of washroom |
 | maxNumber  | int     | No       | maximum number of washrooms will be shown |
 
 ## Sample Request
@@ -31,16 +31,53 @@ Additionally, a request without parameters also can be made. This request will g
 
 ## Sample Response
 
+```
+{
+    "Airport1":
+    {
+        "name": "Airport",
+        "address": "99 port air rd.",
+        "postalCode": "ABC 123",
+        "distance": 100,
+        "opening": "24/7",
+        "closing": "N/A",
+        "handicap": true  
+    },
+    
+    "Airport2":
+    {
+        "name": "Airport",
+        "address": "99 port air rd.",
+        "postalCode": "FLY 2HI",
+        "distance": 800,
+        "opening": "24/7",
+        "closing": "N/A",
+        "handicap": false  
+    },
+
+    "Walmart1": 
+    {
+        "name": "Walmart",
+        "address": "123 foo st",
+        "postalCode": "ABC 123",
+        "distance": 800,
+        "opening": "7am",
+        "closing": "11pm",
+        "handicap": true  
+    }
+}
+```
+
 ## Response Object Definitions
-| Parameter | Type    | Description |
-| :------:  | :--:    | :---------: |
-| name      | String  | name of the washroom (if no name, base on the building it located) |
-| address   | String  | address of the washroom |
-| code      | String  | postal code of the washroom or the building |
-| distance  | int     | distance between the washroom and user's location in meter |
-| opening   | String  | opening time |
-| closing   | String  | closing time |
-| handicap  | boolean | handicap accessible condition |
+| Parameter   | Type    | Description |
+| :------:    | :--:    | :---------: |
+| name        | String  | name of the washroom (if no name, base on the building it located) |
+| address     | String  | address of the washroom |
+| postal code | String  | postal code of the washroom or the building |
+| distance    | int     | distance between the washroom and user's location in meter |
+| opening     | String  | opening time |
+| closing     | String  | closing time |
+| handicap    | boolean | handicap accessible condition |
 
 
 
