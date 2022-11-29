@@ -37,8 +37,8 @@ Additionally, a request without parameters also can be made. This request will g
     {
         "name": "Airport",
         "address": "99 port air rd.",
-        "postalCode": "ABC 123",
-        "distance": 100,
+        "postalCode": "FLY 2HI",
+        "distance": 800,
         "opening": "24/7",
         "closing": "N/A",
         "handicap": true  
