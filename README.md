@@ -99,11 +99,3 @@ Additionally, a request without parameters also can be made. This request will g
 }
 ```
 
-
-
-
-
-
-
-
-
