@@ -10,7 +10,6 @@
     
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
  
-#### Parameters
 | Parameter  | Type    | Required | Description |
 | :-------:  | :--:    | :------: | :---------: |
 | location   | String  | Yes      | location given by user |
