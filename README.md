@@ -10,13 +10,45 @@
     
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
  
-### Parameters
+#### Parameters
 | Parameter  | Type    | Required | Description |
 | :-------:  | :--:    | :------: | :---------: |
 | location   | String  | Yes      | location given by user |
 | radius     | int     | Yes      | search radius in meter |
 | accessible | boolean | No       | handicap accessible condition of washroom |
 | maxNumber  | int     | No       | maximum number of washrooms will be shown |
+
+## Description of Resources
+```
+{
+    ......
+    
+    "Airport2":
+    {
+        "name": "Airport",
+        "address": "99 port air rd.",
+        "postalCode": "FLY 2HI",
+        "distance": 800,
+        "opening": "24/7",
+        "closing": "N/A",
+        "handicap": false  
+    },
+    
+    ......
+
+}
+```
+  
+| Parameter   | Type    | Description |
+| :------:    | :--:    | :---------: |
+| name        | String  | name of the washroom (if no name, base on the building it located) |
+| address     | String  | address of the washroom |
+| postal code | String  | postal code of the washroom or the building |
+| distance    | int     | distance between the washroom and user's location in meter |
+| opening     | String  | opening time |
+| closing     | String  | closing time |
+| handicap    | boolean | handicap accessible condition |
+
 
 ## Sample Request
 These are several sample requests to get information about public washrooms for a given location (by postal code) and search radius.  
