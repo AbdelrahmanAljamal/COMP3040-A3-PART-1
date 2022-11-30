@@ -23,15 +23,15 @@
 {
     ......
     
-    "Airport2":
+    "":
     {
-        "name": "Airport",
-        "address": "99 port air rd.",
-        "postalCode": "FLY 2HI",
-        "distance": 800,
-        "opening": "24/7",
-        "closing": "N/A",
-        "handicap": false  
+        "name": "",
+        "address": "",
+        "postalCode": "",
+        "distance": ,
+        "opening": "",
+        "closing": "",
+        "handicap":   
     },
     
     ......
@@ -99,18 +99,6 @@ Additionally, a request without parameters also can be made. This request will g
     }
 }
 ```
-
-## Response Object Definitions/Descriptions
-| Parameter   | Type    | Description |
-| :------:    | :--:    | :---------: |
-| name        | String  | name of the washroom (if no name, base on the building it located) |
-| address     | String  | address of the washroom |
-| postal code | String  | postal code of the washroom or the building |
-| distance    | int     | distance between the washroom and user's location in meter |
-| opening     | String  | opening time |
-| closing     | String  | closing time |
-| handicap    | boolean | handicap accessible condition |
-
 
 
 
