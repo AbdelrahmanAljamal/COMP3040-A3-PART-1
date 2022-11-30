@@ -9,7 +9,7 @@
   Our API is a very simple API. The only one endpoint can be hit by using a <kbd>GET</kbd> request.  
     
   <kbd>GET /washrooms</kbd> List all public washrooms near the user in Manitoba.
- 
+  
 | Parameter  | Type    | Required | Description |
 | :-------:  | :--:    | :------: | :---------: |
 | location   | String  | Yes      | location given by user |
